@@ -1,4 +1,47 @@
-name: Thomas Sifflet, big bad wolf
-markdown: kramdown
+# Site settings
+title: Thomas Sifflet - Developpeur Web
+description: "Un grand mechant loup"
+baseurl: "" # for test: remove string '/space-jekyll-templa' to ''
+url: "http://hikiyo.github.io" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.githu.io'
+# User settings
+username: thomas sifflet
+user_title: Thomas Sifflet - Full Stack
+email: thomas.sifflet@gmail.com
+twitter_username: tsifflet
+github_username:  hikiyo
 
-theme: jekyll-theme-merlot
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  - title: Accueil
+    url: /
+  - title: Mes posts
+    url: /posts
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: A propos de moi
+    url: /about
+# projects in header index
+projects:
+  - name: asciilang
+    url: https://github.com/victorvoid/asciilang
+  - name: vim-frontend
+    url: https://github.com/victorvoid/vim-frontend
+  - name: generator-capybara
+    url: https://github.com/victorvoid/generator-capybara 
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
